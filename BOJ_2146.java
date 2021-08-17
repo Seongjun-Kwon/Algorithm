@@ -118,7 +118,7 @@ public class Main
 			}
 		}
 
-		for (int i = 1; i < cnt; i++)
+		for (int i = 2; i < cnt; i++)
 			BFS(i);
 		
 		if (ans == Integer.MAX_VALUE)
