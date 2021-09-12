@@ -22,7 +22,7 @@ public class Main
 		{
 			long length = Integer.parseInt(st.nextToken());
 			adj.add(length);
-			hi = Math.max(hi, length) + 1;
+			hi = Math.max(hi, length + 1);
 		}
 
 		while (lo + 1 < hi)
