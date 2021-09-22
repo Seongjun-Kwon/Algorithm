@@ -17,14 +17,14 @@ public class Main
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		double ax = Integer.parseInt(st.nextToken());
-		double ay = Integer.parseInt(st.nextToken());
-		double bx = Integer.parseInt(st.nextToken());
-		double by = Integer.parseInt(st.nextToken());
-		double cx = Integer.parseInt(st.nextToken());
-		double cy = Integer.parseInt(st.nextToken());
-		double dx = Integer.parseInt(st.nextToken());
-		double dy = Integer.parseInt(st.nextToken());
+		double ax = Double.parseDouble(st.nextToken());
+		double ay = Double.parseDouble(st.nextToken());
+		double bx = Double.parseDouble(st.nextToken());
+		double by = Double.parseDouble(st.nextToken());
+		double cx = Double.parseDouble(st.nextToken());
+		double cy = Double.parseDouble(st.nextToken());
+		double dx = Double.parseDouble(st.nextToken());
+		double dy = Double.parseDouble(st.nextToken());
 		
 		double MinhoDisX = (bx - ax) / inteval;
 		double MinhoDisY = (by - ay) / inteval;
