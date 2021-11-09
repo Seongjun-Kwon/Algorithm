@@ -6,7 +6,6 @@ public class Main
 	static int n, s;
 	static int cnt, ans;
 	static int[] arr;
-	static boolean[] vis;
 
 	static void DFS(int idx, int sum)
 	{
@@ -32,7 +31,6 @@ public class Main
 		s = Integer.parseInt(st.nextToken());
 		cnt = 0;
 		arr = new int[n];
-		vis = new boolean[n];
 		
 		st = new StringTokenizer(br.readLine());
 		
