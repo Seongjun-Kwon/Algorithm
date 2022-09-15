@@ -14,17 +14,8 @@ public class Main {
         perB[1] = combination(18, 1) * Math.pow(B, 1) * Math.pow((1.0 - B), 17);
 
         for (int i = 2; i < 19; i++) {
-            if (A == 1.0) {
-                perA[i] = 0;
-            } else {
-                perA[i] = perA[i - 1] / combination(18, i - 1) * combination(18, i) / (1.0 - A) * A;
-            }
-
-            if (B == 1.0) {
-                perB[i] = 0;
-            } else {
-                perB[i] = perB[i - 1] / combination(18, i - 1) * combination(18, i) / (1.0 - B) * B;
-            }
+            perA[i] = combination(18, i) * Math.pow(A, i) * Math.pow((1.0 - A), 18 - i);
+            perB[i] = combination(18, i) * Math.pow(B, i) * Math.pow((1.0 - B), 18 - i);
         }
 
         double primePerA = perA[2] + perA[3] + perA[5] + perA[7] + perA[11] + perA[13] + perA[17];
