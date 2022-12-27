@@ -10,7 +10,7 @@ public class Main {
 	static int N;
 	static int[][] dp;
 
-	// dp[i][j]
+	// dp[i][j] = 4 x i 타일에서 i번째 열 타일을 j 상태로 채우는 경우의 수 (i번째 이전 타일들은 다 채워져 있음)
 	// j=0  j=1  j=2  j=3  j=4
 	// x	 o	  o	   x	x
 	// x	 x	  o	   x	o
